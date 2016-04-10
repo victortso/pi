@@ -1,0 +1,32 @@
+login info: 
+ssh -l pi 192.168.1.154
+pw = raspberry
+su : <gd>
+
+
+install RPi.GPIO
+
+https://www.raspberrypi.org/forums/viewtopic.php?f=32&t=16004 
+sudo apt-get install python-dev
+
+
+http://www.thirdeyevis.com/pi-page-1.php
+sudo python setup.py install
+
+
+Set up keyboard keys properly (esp. “|”)
+https://www.raspberrypi.org/forums/viewtopic.php?f=26&t=39806&p=331516
+
+Check version of GPIO lib
+http://raspi.tv/2013/rpi-gpio-basics-1-how-to-check-what-rpi-gpio-version-you-have
+find /usr | grep -i gpio
+
+Get the latest version of RPi.GPIO for Pi 2
+
+https://blog.adafruit.com/2015/02/05/how-to-fix-error-loading-rpi-gpio-python-library-on-your-brand-new-raspberry-pi-2/
+sudo apt-get update
+sudo apt-get install python-pip
+sudo pip install -U RPi.GPIO
+
+
+
